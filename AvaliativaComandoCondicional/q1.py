@@ -21,4 +21,4 @@ else:
         r = n % 10
         n = n // 10
         soma = soma + r
-        print("Soma:", soma)
+print("Soma:", soma)
