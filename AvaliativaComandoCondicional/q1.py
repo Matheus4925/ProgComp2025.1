@@ -1,8 +1,8 @@
-n = int(input("Informe um número de 4 algarismos:"))
+n = int(input("Digite um número de até 4 algarismos:"))
 soma = 0
 
-if 999 > n or n > 9999:
-    print("Esse número não possui 4 algarismos.")
+if n < 1 or n > 9999:
+    print("Esse número possui mais de 4 algarismos.")
     
 else:
     n != 0
