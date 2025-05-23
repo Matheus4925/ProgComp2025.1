@@ -1,3 +1,4 @@
+# Entrada do tempo estacionado
 tempo = int(input("Informe o tempo estacionado em minutos:"))
 
 # Verificação se há fração de hora
