@@ -1,3 +1,4 @@
+# Entrada do número
 n = int(input("Digite um número de até 4 algarismos:"))
 soma = 0
 
