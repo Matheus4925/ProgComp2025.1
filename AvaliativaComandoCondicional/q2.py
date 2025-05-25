@@ -1,20 +1,20 @@
-# Entrada da nota
-nota1 = int(input("Digite a sua nota no 1º bimestre:"))
-nota2 = int(input("Digite a sua nota no 2º bimestre:"))
+print("CALCULANDO A MÉDIA")
+nota1 = float(input( " DIGITE A SUA PRIMEIRA NOTA:  "))
+nota2 = float(input( " DIGITE A SUA SEGUNDA NOTA:  "))
 
-# Cálculo da média do aluno
-média = (2 * nota1 + 3 * nota2)// 5
+media = (( nota1 * 2 ) + ( nota2 * 3)) / 5 # CALCULANDO A MÉDIA FINAL.
 
-# Verificação da situação do aluno
-if média > 60:
-    print("Você foi aprovado.")
-elif 20 <= média < 60:
-    print("Você realizou a prova final.")
-    nota_final = int(input("Digite sua nota na prova final:"))
-    média_final = (média + nota_final)// 2
-    if média_final < 60:
-        print("Você foi reprovado")
+if media >= 6.0:
+    print("APROVADO, SUA MÉDIA FICOU EM ", media) # SE APROVADO ACABA AQUI.
+
+else: 
+    print("PROVA FINAL, SUA MÉDIA FICOU EM " , media) # SE REPROVADO, VAI PARA A PROVA FINAL.
+    
+    notaf = float (input( " DIGITE A SUA NOTA FINAL:  "))  # PEDINDO A NOTA DA PROVA FINAL >
+
+    media = (( nota1 * 2) + ( notaf * 3 )) / 5 # CALCULANDO UMA DAS NOTAS COM A PROVA FINAL.
+
+    if media >= 6.0:
+        print("APROVADO, SUA MÉDIA FICOU EM ", media) 
     else:
-        print("Você foi aprovado.")
-else:
-    print("Você foi reprovado.")
+        print("REPROVADO, SUA MÉDIA FICOU EM ", media)
